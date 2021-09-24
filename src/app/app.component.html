@@ -1,0 +1,17 @@
+<div class="container py-5">
+  <div class="card">
+    <div class="card-body">
+      <div class="d-flex justify-content-around">
+        <button type="button" (click)="onClear()" class="btn btn-danger px-3">Clear Storage</button>
+        <button type="button" (click)="onConvert()" class="btn btn-success px-3">Convert and download to CSV</button>
+        <button type="button" (click)="onFetch()" class="btn btn-primary px-3">Fetch data</button>
+      </div>
+
+
+      <div class="mt-5">
+        <h6 class="mb-0">Amount fetched: <span class=" text-primary">{{ dataFetchedLength | number }}</span> </h6>
+        <h6 class="mb-0">Amount Stored: <span class=" text-primary">{{ dataStoredLength | number }}</span> </h6>
+      </div>
+    </div>
+  </div>
+</div>
